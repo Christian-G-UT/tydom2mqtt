@@ -136,8 +136,6 @@ class Configuration:
         configuration_to_print = copy.copy(self)
 
         # Mask sensitive values before logging
-        configuration_to_print.tydom_password = Configuration.mask_value(
-            configuration_to_print.tydom_password)
         configuration_to_print.mqtt_password = Configuration.mask_value(
             configuration_to_print.mqtt_password)
         configuration_to_print.deltadore_password = Configuration.mask_value(
